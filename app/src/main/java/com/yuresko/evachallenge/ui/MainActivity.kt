@@ -3,8 +3,6 @@ package com.yuresko.evachallenge.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yuresko.evachallenge.R
-import com.yuresko.evachallenge.databinding.ActivityMainBinding
-import com.yuresko.evachallenge.ui.home.HomeFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

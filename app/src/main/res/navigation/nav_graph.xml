@@ -5,7 +5,38 @@
     app:startDestination="@id/homeFragment">
 
     <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.yuresko.evachallenge.ui.searchmovie.SearchMovieFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_watchedFragment"
+            app:destination="@id/watchedFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchedFragment"
+        android:name="com.yuresko.evachallenge.ui.watched.WatchedFragment"
+        android:label="WatchedFragment">
+        <action
+            android:id="@+id/action_watchedFragment_to_watchLaterFragment"
+            app:destination="@id/watchLaterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.yuresko.evachallenge.ui.moviedetail.MovieDetailFragment"
+        android:label="MovieDetailFragment" />
+    <fragment
+        android:id="@+id/watchLaterFragment"
+        android:name="com.yuresko.evachallenge.ui.watchlater.WatchLaterFragment"
+        android:label="WatchLaterFragment" />
+    <fragment
         android:id="@+id/homeFragment"
-        android:name="com.yuresko.evachallenge.ui.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:name="com.yuresko.evachallenge.ui.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
 </navigation>

@@ -1,4 +1,6 @@
 package com.yuresko.evachallenge.ui.watchlater
 
-class WatchLaterFragment {
+import androidx.fragment.app.Fragment
+
+class WatchLaterFragment : Fragment() {
 }

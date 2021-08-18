@@ -8,6 +8,7 @@ import com.yuresko.evachallenge.models.ModelMovie
 import com.yuresko.evachallenge.utils.API_KEY
 import com.yuresko.evachallenge.utils.DispatcherProvider
 import com.yuresko.evachallenge.utils.NotFoundException
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -40,5 +41,4 @@ class RepositoryImpl @Inject constructor(
                 emit(ResponseResult.Error(ex))
             }
         }
-
 }

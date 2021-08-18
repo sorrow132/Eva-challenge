@@ -1,9 +1,6 @@
 package com.yuresko.evachallenge.data.local
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import com.yuresko.evachallenge.models.ModelMovie
 import kotlinx.coroutines.flow.Flow
 
@@ -14,6 +11,8 @@ interface DaoRepo {
     suspend fun insertMovie(modelMovie: ModelMovie)
 
     @Query("SELECT * FROM ModelMovie WHERE id == id")
-    fun getAllWatched(): Flow<ModelMovie>
+    fun getWatchedMovie(): Flow<ModelMovie>
 
+    @Delete
+    fun deleteWatchedMovie(modelMovie: ModelMovie)
 }

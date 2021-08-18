@@ -1,4 +1,8 @@
 package com.yuresko.evachallenge.ui.moviedetail
 
-class MovieDetailFragment {
+import androidx.fragment.app.Fragment
+
+class MovieDetailFragment : Fragment() {
+
+
 }
