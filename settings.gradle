@@ -1,0 +1,2 @@
+rootProject.name = "EvaChallenge"
+include ':app'
